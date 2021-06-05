@@ -1,0 +1,351 @@
+  *{
+    box-sizing: border-box;
+  }
+
+  .title-banner {
+    color: #02ccba;
+    background-color: black;
+    font-size: small;
+    text-align: center;
+    margin: initial;
+  }
+  
+  .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    list-style: none;
+  }
+
+  .header > h1{
+    margin-left: 20px;
+  }
+
+  li {
+    list-style: none;
+    float: left;
+  }
+    /*メニュー*/
+
+  .cp_navi {
+    display: flex;
+    display: block;
+    margin: 1em 1%;
+    overflow: hidden;
+  }
+
+  .nav-wrapper {
+    background-color: rgb(241, 239, 239);
+    border-top: 0;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+    display: none;
+    z-index: 100;
+    margin: 0 auto;
+    padding: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    top: 95px;
+    visibility: hidden;
+    -webkit-transiton: opacity 0.2s;
+    transition: opacity 0.2s;
+  }
+
+  .nav-inner {
+    width: 802px;
+    height: 204px;
+    text-align: center;
+    margin: 0 auto;
+    border: rgba(128, 128, 128, 0.37) solid 0.3px;
+    background-color: rgb(250, 250, 250);
+  }
+
+  .nav-section {
+    align-items: flex-start;
+  }
+
+  .cp_navi ul {
+    margin: 0;
+    padding: 0;
+  }
+  .cp_navi ul li {
+    display: inline-block;
+    list-style-type: none;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  .cp_navi > ul > li > a > .caret {
+    border-top: 4px solid #aaaaaa;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    content: '';
+    display: inline-block;
+    height: 0;
+    width: 0;
+    vertical-align: middle;
+    -webkit-transition: color 0.1s linear;
+    transition: color 0.1s linear;
+  }
+  .cp_navi > ul > li > a {
+    color: #000000;
+    display: block;
+    line-height: 56px;
+    padding: 0 20px;
+    text-decoration: none;
+  }
+  .cp_navi > ul > li:hover {
+    background-color:#a5a4a4;
+  }
+  .cp_navi > ul > li:hover > a {
+    color: rgb( 255, 255, 255 );
+  }
+  .cp_navi > ul > li:hover > a > .caret {
+    border-top-color: rgb( 255, 255, 255 );
+  }
+  .cp_navi > ul > li:hover > div {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+  .cp_navi > ul > li > div ul > li {
+    display: block;
+  }
+  .cp_navi > ul > li > div ul > li > a {
+    color: #000000;
+    display: block;
+    text-decoration: none;
+  }
+  .cp_navi > ul > li > div ul > li:hover > a {
+    background-color: rgba( 255, 255, 255, 0.1);
+  }
+
+  /*商品カテゴリー*/
+  .category{
+    margin: 10px auto;
+    height: 80px;
+    width: 80px;
+    padding: 10px 5px;
+
+  }
+
+  .category-name{
+    font-size: 5px;
+    width:  70px;
+  }
+  
+  .category img{
+    height: 40px;
+    width: 40px;
+  }
+  /*検索エンジン*/
+  .search_container{
+    box-sizing: border-box;
+    position: relative;
+    border: 0.3px solid #999;
+    border-radius: 2px;
+    display: block;
+    padding: 3px 10px;
+    height: 2.0em;
+    width: 200px;
+    overflow: hidden;
+    margin-right: 20px;
+  }
+  .search_container input[type="text"]{
+    border: none;
+    height: 2.0em;
+  }
+  .search_container input[type="text"]:focus {
+    outline: 0;
+  }
+  .search_container input[type="submit"]{
+    cursor: pointer;
+    font-family: FontAwesome;
+    font-size: 1.3em;
+    border: none;
+    background: none;
+    color: #C0C0C0;
+    position: absolute;
+    width: 2.3em;
+    height: 2.3em;
+    right: 0;
+    top: -10px;
+    outline : none;
+  }
+  /*検索エンジンここまで*/
+
+  .contents-section{
+    
+  }
+
+  .banner-list {
+    margin: 50px auto;
+  }
+
+  .banner-list a{
+    display: block;
+    max-width: 1000px;
+    
+  }
+  .section_container-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section_container-items > .series {
+    padding: 0px 10px;
+  }
+
+/*スライダー*/
+
+  .swiper-container img {
+    border: rgba(88, 88, 88, 0.37) 0.3px solid;
+    display:block;
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+/*スライダーここまで*/
+
+  .banner-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+/*コーディネート一覧*/
+.coordinate {
+  margin: 0 auto;
+  height: 503px;
+  width: 1204px;
+  display: flex;
+
+}
+
+/* ボタン */
+
+.coordinate img{
+display: inline-block;
+margin: 0 0;
+}
+
+.btn-continer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 503px;
+  width: 408px;
+  background-color: #239b76;
+}
+
+.btn{
+  padding:8px 24px;
+  color:white;
+  opacity:0.8;
+  border-radius: 4px;
+}
+
+.btn:hover{
+  opacity: 1;
+}
+
+.item1{
+  background-color:#239b76;
+}
+
+.item2{
+  background-color:#3b5998;
+}
+
+.item3{
+  background-color:#55acee;
+}
+
+.item4{
+  background-color:#55acee;
+}
+
+/*RANKING　CSS　counter　使用*/
+
+.item_wrapper {
+  list-style-type: none;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 1vw 1vw;
+}
+
+.item_wrapper li {
+  width: calc(100% / 3 - 2 * 1vw);
+  margin: 1vw;
+}
+
+@media screen and (min-width: 425px) {
+  .item_wrapper li {
+    width: calc(100% / 4 - 2 * 1vw);
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .item_wrapper li {
+    width: calc(100% / 5 - 2 * 1vw);
+  }
+}
+
+.item_wrapper img {
+  vertical-align: bottom;
+}
+
+.rank2 li {
+  counter-increment: rank;
+  position: relative;
+  overflow: hidden;
+}
+
+.rank2 li::before {
+  content: "";
+  background-color: #000000;
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  transform: rotate(-45deg);
+  position: absolute;
+  left: -50%;
+  top: 0;
+}
+
+.rank2 li::after {
+  content: counter(rank);
+  color: white;
+  font-size: .6rem;
+  font-weight: 700;
+  line-height: initial;
+  text-align: center;
+  width: 1.5em;
+  position: absolute;
+  left: .3em;
+  top: .3em;
+}
+
+@media screen and (min-width: 768px) {
+  .rank2 li::after {
+    font-size: .8rem;
+  }
+}
+
+.info, .info:before, .info:after {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+.info {margin: 1em auto;padding: 0 1.5em;border: 1px solid #ccc;text-align: left;font-size: 1em;line-height: 1.3;color: #444;overflow: auto;width: 90%;height: 10em;background-color: #fcfcfc;}
+.info dl {padding: 0.5em 0;border-bottom: 1px solid #ccc;}
+.info dt {padding-bottom: 0;width: 6em;}
+@media screen and (min-width: 480px) {
+.info dt {clear: left;float: left;}
+.info dd {margin-left: 0.5em;}
+}
+.footer {
+  background-color: #444;}
