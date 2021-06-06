@@ -24,8 +24,12 @@
 
   li {
     list-style: none;
-    float: left;
   }
+
+  a {
+    cursor:pointer
+  }
+
     /*メニュー*/
 
   .cp_navi {
@@ -175,11 +179,6 @@
     outline : none;
   }
   /*検索エンジンここまで*/
-
-  .contents-section{
-    
-  }
-
   .banner-list {
     margin: 50px auto;
   }
@@ -189,6 +188,22 @@
     max-width: 1000px;
     
   }
+
+  .section-title , .section-subtitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-title{
+    font-size: small;
+    height: 45px;
+  }
+  .section-subtitle{
+    font-size: xx-small;
+    height: 30px;
+    margin-bottom: 30px;
+  }
+
   .section_container-items{
     display: flex;
     justify-content: center;
@@ -196,7 +211,17 @@
   }
 
   .section_container-items > .series {
-    padding: 0px 10px;
+    margin: 0px 10px;
+  }
+
+  .section_container-items > .series > a{
+    font-size: small;
+    text-decoration: none;
+  }
+
+  .section_container-items > .series > a > p{
+    margin-top: 0px;
+    color: #000000;
   }
 
 /*スライダー*/
@@ -219,11 +244,10 @@
 
 /*コーディネート一覧*/
 .coordinate {
-  margin: 0 auto;
+  margin: 50px auto;
   height: 503px;
   width: 1204px;
   display: flex;
-
 }
 
 /* ボタン */
@@ -247,7 +271,10 @@ margin: 0 0;
   padding:8px 24px;
   color:white;
   opacity:0.8;
-  border-radius: 4px;
+  border:solid 1px black;
+  width: 250px;
+  margin: 20px 0;
+  paint-order: normal;
 }
 
 .btn:hover{
@@ -266,15 +293,10 @@ margin: 0 0;
   background-color:#55acee;
 }
 
-.item4{
-  background-color:#55acee;
-}
-
 /*RANKING　CSS　counter　使用*/
 
 .item_wrapper {
-  list-style-type: none;
-  display: -ms-flexbox;
+  
   display: flex;
   flex-wrap: wrap;
   padding: 0;
@@ -282,24 +304,12 @@ margin: 0 0;
 }
 
 .item_wrapper li {
-  width: calc(100% / 3 - 2 * 1vw);
-  margin: 1vw;
-}
-
-@media screen and (min-width: 425px) {
-  .item_wrapper li {
-    width: calc(100% / 4 - 2 * 1vw);
-  }
-}
-
-@media screen and (min-width: 980px) {
-  .item_wrapper li {
-    width: calc(100% / 5 - 2 * 1vw);
-  }
+  margin: 10px;
 }
 
 .item_wrapper img {
   vertical-align: bottom;
+  width: 228px;
 }
 
 .rank2 li {
