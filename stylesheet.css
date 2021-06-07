@@ -197,6 +197,7 @@
   .section-title{
     font-size: small;
     height: 45px;
+    margin-bottom: 10px;
   }
   .section-subtitle{
     font-size: xx-small;
@@ -295,30 +296,26 @@ margin: 0 0;
 
 /*RANKING　CSS　counter　使用*/
 
-.item_wrapper {
-  
+
+/*テスト中*/
+
+.ranking-container{
   display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 0 1vw 1vw;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+  margin: 0 auto 30px;
 }
 
-.item_wrapper li {
-  margin: 10px;
-}
-
-.item_wrapper img {
-  vertical-align: bottom;
-  width: 228px;
-}
-
-.rank2 li {
+.ranking-container > a{
   counter-increment: rank;
   position: relative;
   overflow: hidden;
+  margin: 0 12.5px 50px;
 }
 
-.rank2 li::before {
+.ranking-container > a::before{
   content: "";
   background-color: #000000;
   display: block;
@@ -330,7 +327,7 @@ margin: 0 0;
   top: 0;
 }
 
-.rank2 li::after {
+.ranking-container > a::after{
   content: counter(rank);
   color: white;
   font-size: .6rem;
@@ -342,6 +339,7 @@ margin: 0 0;
   left: .3em;
   top: .3em;
 }
+/*テスト中*/
 
 @media screen and (min-width: 768px) {
   .rank2 li::after {
